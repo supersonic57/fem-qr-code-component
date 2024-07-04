@@ -1,0 +1,71 @@
+/* Imports */
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&display=swap');
+
+/* Reset */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* Variables */
+
+:root {
+    --clr-white: hsl(0, 0%, 100%);
+    --clr-light-gray: hsl(212, 45%, 89%);
+    --clr-grayish-blue: hsl(220, 15%, 55%);
+    --clr-dark-blue: hsl(218, 44%, 22%);
+}
+
+/* Styling */
+
+body {
+    background-color: var(--clr-light-gray);
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.component {
+    background-color: var(--clr-white);
+    width: 320px;
+    padding: 15px;
+    border-radius: 20px;
+    text-align: center;
+    font-family: "Outfit", sans-serif;
+    box-shadow: 5px 5px 50px var(--clr-grayish-blue);
+}
+
+.component img {
+    border-radius: 10px;
+}
+
+.component h1 {
+    color: var(--clr-dark-blue);
+    font-weight: 700;
+    font-size: 1.4rem;
+    padding: 20px 0;
+}
+
+.component p {
+    color: var(--clr-grayish-blue);
+    padding: 0 10px 20px;
+}
